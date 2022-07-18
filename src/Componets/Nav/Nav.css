@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: auto 5px;
+}
+
+.create_button {
+    background: #beabed !important;
+
+}
+
+.logo_shortName {
+    background-color: #beabed;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        height: 50px;
+    }
+
+    .nav ul {
+        display: none;
+
+    }
+}

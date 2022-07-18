@@ -1,0 +1,22 @@
+.customer_nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+
+.customer_nav h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.button_conatiner * {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 98%;
+    }
+}

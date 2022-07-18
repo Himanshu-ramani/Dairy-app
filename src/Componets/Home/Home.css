@@ -1,0 +1,41 @@
+.home {
+    background: linear-gradient(180deg, #FFFFFF 0%, #EDDDDC 100%);
+    height: 91vmin;
+    width: 100%;
+}
+
+.home_conatiner {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.home_conatiner img {
+    width: 60%;
+    margin: auto;
+}
+
+.home_conatiner div {
+    width: 60%;
+    margin: auto;
+}
+
+.link_sigin {
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .home {
+        height: 95vh;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .home_conatiner {
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+.custmorList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    ;
+}
+
+.Delete_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.custmorList h3 {
+    text-transform: capitalize;
+}
+
+.pencil_icon {
+    margin: 0 15px;
+}

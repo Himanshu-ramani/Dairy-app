@@ -1,0 +1,59 @@
+.auth_form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 7px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.auth_form input {
+    width: 80%;
+    margin: 7px auto;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 4px;
+    outline-color: #D8EEFF;
+
+}
+
+.error_message {
+    width: 83%;
+    margin: auto;
+    color: red;
+}
+
+.account_note {
+    width: 83%;
+    margin: auto;
+
+}
+
+.auth_form button {
+    width: 83%;
+    margin: 5px auto;
+}
+
+.auth_form h1 {
+    margin: 5px auto;
+}
+
+.submit_button_auth {
+
+    background-color: #559CF8;
+    color: #fff;
+}
+
+.submit_button_auth:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 767px) {
+    .auth_form {
+        width: 90%;
+        padding: 10px;
+
+    }
+}

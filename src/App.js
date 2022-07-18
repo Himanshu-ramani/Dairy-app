@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import Nav from "./Componets/Nav/Nav";
+import CustomerList from "./Componets/CustomerList/CustomerList";
+import AuthForm from "./Componets/AuthForm/AuthForm";
+import { useSelector } from "react-redux";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import ProductsList from "./Componets/Products/ProductsList";
+import Home from "./Componets/Home/Home";
 
 function App() {
+  const navigate = useNavigate();
+  const state = useSelector((state) => state);
+
+  useEffect(() => {
+    if (state.userState) {
+      navigate("/customerList");
+    }
+    if (!state.userState) {
+      navigate("/");
+    }
+  }, [state.userState]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Authentication/:authStatus" element={<AuthForm />} />
+        <Route path="/customerList" element={<CustomerList />} />
+        <Route path="/customer/:customerId" element={<ProductsList />} />
+      </Routes>
     </div>
   );
 }

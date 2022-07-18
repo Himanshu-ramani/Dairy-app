@@ -1,0 +1,87 @@
+.dairyForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 12;
+    width: 25%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.dairyForm div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    margin: 5px 0;
+}
+
+.dairyForm label {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
+    font-size: 14px;
+}
+
+.dairyForm input,
+.dairyForm textarea {
+    width: 80%;
+    padding: 7px;
+    border-radius: 3px;
+    outline-color: #D8EEFF;
+    justify-self: center;
+    width: 100%;
+    margin: 5px auto;
+    resize: none;
+    border: 1px solid rgba(128, 128, 128, 0.615);
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
+}
+
+
+
+.dairyForm button {
+    margin-right: 10px;
+}
+
+.submit {
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    color: #fff;
+    background: #559CF8;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.cancel {
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.error_message_dairy {
+    color: red;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .dairyForm {
+        width: 80%;
+    }
+}
